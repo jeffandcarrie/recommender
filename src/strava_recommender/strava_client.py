@@ -6,6 +6,8 @@ import webbrowser
 import httpx
 from rich.console import Console
 
+from strava_recommender.analysis import calculate_normalized_power
+
 from strava_recommender.config import get_settings
 from strava_recommender.geo import decode_polyline, farthest_point_bearing
 from strava_recommender.models.activity import EnrichedActivity
@@ -128,9 +130,32 @@ def authorize() -> None:
     console.print("[green]Authorization successful! Tokens saved.[/green]")
 
 
+def _fetch_activity_power_stream(activity_id: int, access_token: str) -> list[float]:
+    """Fetch the power stream for a ride and return the raw watt values."""
+    response = httpx.get(
+        f"{STRAVA_API}/activities/{activity_id}/streams",
+        headers={"Authorization": f"Bearer {access_token}"},
+        params={"keys": "time,watts", "key_by_type": True},
+        timeout=30,
+    )
+    if response.status_code == 404:
+        return []
+    response.raise_for_status()
+
+    data = response.json()
+    watts_data = data.get("watts")
+    if not watts_data:
+        return []
+    if isinstance(watts_data, dict):
+        series = watts_data.get("data", [])
+    else:
+        series = watts_data
+    return [float(v) for v in series if v is not None]
+
+
 def fetch_cycling_activities() -> list[EnrichedActivity]:
     """Fetch all cycling activities from Strava."""
-    from datetime import datetime, timezone
+    from datetime import datetime
 
     access_token = _get_access_token()
     headers = {"Authorization": f"Bearer {access_token}"}
@@ -147,7 +172,6 @@ def fetch_cycling_activities() -> list[EnrichedActivity]:
         )
         response.raise_for_status()
         data = response.json()
-        print("received some strava data")
 
         if not data:
             break
@@ -160,36 +184,38 @@ def fetch_cycling_activities() -> list[EnrichedActivity]:
             if not start_latlng or len(start_latlng) < 2:
                 continue
 
-            # Compute bearing to farthest point from the route polyline
             bearing = None
             summary_polyline = (act.get("map") or {}).get("summary_polyline")
             if summary_polyline:
                 points = decode_polyline(summary_polyline)
-                bearing = farthest_point_bearing(
-                    start_latlng[0], start_latlng[1], points
-                )
+                bearing = farthest_point_bearing(start_latlng[0], start_latlng[1], points)
 
             distance = act.get("distance", 0.0)
             elevation = act.get("total_elevation_gain", 0.0)
             elev_per_km = (elevation / (distance / 1000)) if distance > 0 else 0.0
 
-            activities.append(
-                EnrichedActivity(
-                    strava_id=act["id"],
-                    start_lat=start_latlng[0],
-                    start_lon=start_latlng[1],
-                    distance_m=distance,
-                    elevation_gain_m=elevation,
-                    elevation_per_km=elev_per_km,
-                    average_speed_mps=act.get("average_speed", 0.0),
-                    average_watts=act.get("average_watts"),
-                    weighted_average_watts=act.get("weighted_average_watts"),
-                    start_time=datetime.fromisoformat(act["start_date"]),
-                    elapsed_seconds=act.get("elapsed_time", 0),
-                    moving_seconds=act.get("moving_time", 0),
-                    bearing_deg=bearing,
-                )
+            activity = EnrichedActivity(
+                strava_id=act["id"],
+                start_lat=start_latlng[0],
+                start_lon=start_latlng[1],
+                distance_m=distance,
+                elevation_gain_m=elevation,
+                elevation_per_km=elev_per_km,
+                average_speed_mps=act.get("average_speed", 0.0),
+                average_watts=act.get("average_watts"),
+                weighted_average_watts=act.get("weighted_average_watts"),
+                start_time=datetime.fromisoformat(act["start_date"]),
+                elapsed_seconds=act.get("elapsed_time", 0),
+                moving_seconds=act.get("moving_time", 0),
+                bearing_deg=bearing,
             )
+
+            power_values = _fetch_activity_power_stream(activity.strava_id, access_token)
+            if power_values:
+                activity.np_5m_watts = calculate_normalized_power(power_values, 5 * 60)
+                activity.np_20m_watts = calculate_normalized_power(power_values, 20 * 60)
+
+            activities.append(activity)
 
         page += 1
 

@@ -1,13 +1,13 @@
-import { useEffect, useMemo, useState } from "react";
+/// <reference types="vite/client" />
+
+import { useEffect, useState } from "react";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import L from "leaflet";
 import {
   CircleMarker,
   MapContainer,
   Polyline,
   TileLayer,
   Tooltip as LeafletTooltip,
-  useMap,
 } from "react-leaflet";
 import {
   CartesianGrid,
@@ -28,9 +28,11 @@ import {
   Recommendation,
   fetchActivities,
   fetchHeadwindScatter,
+  fetchPerformanceGains,
   fetchRecommend,
   fetchRoutes,
   fetchTimeseries,
+  fetchWeeklyPerformanceGains,
 } from "./api";
 import {
   UnitSystem,
@@ -55,6 +57,39 @@ type MetricMeta = {
   convert: (v: number, u: UnitSystem) => number;
 };
 
+const readNumberEnv = (name: string, fallback: number) => {
+  const value = Number(import.meta.env[name]);
+  return Number.isFinite(value) ? value : fallback;
+};
+
+const readMetricEnv = (name: string, fallback: Metric): Metric => {
+  const valid: Metric[] = [
+    "average_watts",
+    "weighted_average_watts",
+    "average_speed_kmh",
+    "distance_km",
+    "elevation_gain_m",
+    "moving_minutes",
+  ];
+  const value = import.meta.env[name] as string | undefined;
+  return valid.includes(value as Metric) ? (value as Metric) : fallback;
+};
+
+const readBucketEnv = (name: string, fallback: Bucket): Bucket => {
+  const value = import.meta.env[name] as string | undefined;
+  return value === "month" || value === "week" ? (value as Bucket) : fallback;
+};
+
+const APP_CONFIG = {
+  mapCenter: [
+    readNumberEnv("VITE_MAP_CENTER_LAT", 42.0837),
+    readNumberEnv("VITE_MAP_CENTER_LON", -71.3967),
+  ] as [number, number],
+  mapZoom: Math.round(readNumberEnv("VITE_MAP_ZOOM", 11)),
+  defaultMetric: readMetricEnv("VITE_DEFAULT_METRIC", "distance_km"),
+  defaultBucket: readBucketEnv("VITE_DEFAULT_BUCKET", "week"),
+};
+
 const METRICS: MetricMeta[] = [
   { value: "average_watts", label: "Average Watts", unit: () => "W", convert: (v) => v },
   { value: "weighted_average_watts", label: "Weighted Avg Watts", unit: () => "W", convert: (v) => v },
@@ -66,8 +101,8 @@ const METRICS: MetricMeta[] = [
 
 function TimeseriesCard() {
   const units = useUnits();
-  const [metric, setMetric] = useState<Metric>("average_watts");
-  const [bucket, setBucket] = useState<Bucket>("month");
+  const [metric, setMetric] = useState<Metric>(APP_CONFIG.defaultMetric);
+  const [bucket, setBucket] = useState<Bucket>(APP_CONFIG.defaultBucket);
   const { data, isLoading, error } = useQuery({
     queryKey: ["timeseries", metric, bucket],
     queryFn: () => fetchTimeseries(metric, bucket),
@@ -92,7 +127,10 @@ function TimeseriesCard() {
         </select>
       </div>
       <h2>
-        {meta.label} ({unit}) — {bucket === "month" ? "monthly" : "weekly"} avg
+        {meta.label} ({unit}) — {bucket === "month" ? "monthly" : "weekly"}{" "}
+        {metric === "distance_km" || metric === "elevation_gain_m" || metric === "moving_minutes"
+          ? "total"
+          : "avg"}
       </h2>
       {isLoading && <div className="muted">Loading…</div>}
       {error && <div className="error">{(error as Error).message}</div>}
@@ -259,6 +297,19 @@ function formatTime(minutes: number): string {
   return h > 0 ? `${h}h${m.toString().padStart(2, "0")}m` : `${m}m`;
 }
 
+function formatIsoWeek(dateInput: string): string {
+  const date = new Date(dateInput);
+  if (Number.isNaN(date.getTime())) return "—";
+
+  const isoDate = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const day = isoDate.getUTCDay() || 7;
+  isoDate.setUTCDate(isoDate.getUTCDate() + 4 - day);
+
+  const yearStart = new Date(Date.UTC(isoDate.getUTCFullYear(), 0, 1));
+  const weekNumber = Math.ceil((((isoDate.getTime() - yearStart.getTime()) / 86400000) + 1) / 7);
+  return `${isoDate.getUTCFullYear()}-W${weekNumber}`;
+}
+
 function parseDuration(input: string): number | null {
   const s = input.trim().toLowerCase();
   if (!s) return null;
@@ -270,6 +321,160 @@ function parseDuration(input: string): number | null {
   const numeric = Number(s);
   if (!Number.isNaN(numeric)) return numeric;
   return null;
+}
+
+function PerformanceGainCard() {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["performance-gains"],
+    queryFn: fetchPerformanceGains,
+  });
+
+  return (
+    <div className="card">
+      <h2>Performance gains by ride type</h2>
+      <p className="muted" style={{ marginTop: 0, fontSize: 12 }}>
+        Biggest positive gains versus each route&apos;s historical baseline. Higher is better.
+      </p>
+      {isLoading && <div className="muted">Loading gains…</div>}
+      {error && <div className="error">{(error as Error).message}</div>}
+      {data && data.length === 0 && (
+        <div className="muted">Not enough route history yet to compare gains.</div>
+      )}
+      {data && data.length > 0 && (
+        <div className="routes-list">
+          {data.slice(0, 8).map((row) => (
+            <div key={row.strava_id} className="route-row">
+              <div className="route-row-head">
+                <span className="route-row-title">
+                  {row.label || `Route ${row.route_id}`}
+                  {row.location_name && (
+                    <span className="muted"> — {row.location_name}</span>
+                  )}
+                </span>
+                <span className="muted" style={{ fontSize: 12 }}>
+                  +{row.improvement_watts.toFixed(0)} W
+                </span>
+              </div>
+              <div className="route-row-weather">
+                <span>{new Date(row.start_time).toLocaleDateString()}</span>
+                <span>
+                  {row.power_metric} {row.current_power_watts.toFixed(0)} W vs {row.baseline_power_watts.toFixed(0)} W
+                </span>
+                <span>
+                  {row.weather_condition || "—"} · {row.temp_c.toFixed(0)}°C
+                </span>
+                {row.weighted_average_watts != null && (
+                  <span>{row.weighted_average_watts.toFixed(0)} W avg effort</span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function WeeklyPerformanceGainCard() {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["weekly-performance-gains"],
+    queryFn: fetchWeeklyPerformanceGains,
+  });
+
+  const chartData = data
+    ? data
+        .slice()
+        .sort(
+          (a, b) => new Date(a.week_start).getTime() - new Date(b.week_start).getTime(),
+        )
+        .map((row) => ({
+          week: formatIsoWeek(row.week_start),
+          volume_km: row.total_distance_km,
+          gain_watts: row.total_improvement_watts,
+        }))
+    : [];
+
+  return (
+    <div className="card">
+      <h2>Best power-gain weeks</h2>
+      <p className="muted" style={{ marginTop: 0, fontSize: 12 }}>
+        Week-start dates. Each point represents one full ISO week of riding.
+      </p>
+      {isLoading && <div className="muted">Loading weekly gains…</div>}
+      {error && <div className="error">{(error as Error).message}</div>}
+      {data && data.length === 0 && (
+        <div className="muted">Not enough weekly route history yet to compare gains.</div>
+      )}
+      {chartData.length > 0 && (
+        <div style={{ height: 180, marginBottom: 18 }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={chartData} margin={{ top: 8, right: 16, bottom: 8, left: 8 }}>
+              <CartesianGrid stroke="#232834" strokeDasharray="3 3" />
+              <XAxis dataKey="week" stroke="#9aa0a8" fontSize={11} />
+              <YAxis yAxisId="left" stroke="#9aa0a8" fontSize={11} />
+              <YAxis
+                yAxisId="right"
+                orientation="right"
+                stroke="#9aa0a8"
+                fontSize={11}
+              />
+              <Tooltip
+                contentStyle={{ background: "#161a22", border: "1px solid #2a3040" }}
+                formatter={(value: number, name: string) => {
+                  if (name === "gain_watts") return `${value.toFixed(0)} W`;
+                  if (name === "volume_km") return `${value.toFixed(0)} km`;
+                  return value;
+                }}
+              />
+              <Line
+                yAxisId="left"
+                type="monotone"
+                dataKey="gain_watts"
+                stroke="#fc4c02"
+                strokeWidth={2}
+                dot={{ r: 3 }}
+                name="gain_watts"
+              />
+              <Line
+                yAxisId="right"
+                type="monotone"
+                dataKey="volume_km"
+                stroke="#0f8f47"
+                strokeWidth={2}
+                dot={{ r: 2 }}
+                name="volume_km"
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+      )}
+      {data && data.length > 0 && (
+        <div className="routes-list">
+          {data.slice(0, 10).map((row) => (
+            <div key={row.week} className="route-row">
+              <div className="route-row-head">
+                <span className="route-row-title">{formatIsoWeek(row.week_start)}</span>
+                <span className="muted" style={{ fontSize: 12 }}>
+                  +{row.total_improvement_watts.toFixed(0)} W
+                </span>
+              </div>
+              <div className="route-row-weather">
+                <span>{row.key_driver}</span>
+                <span>{row.ride_count} rides</span>
+                <span>{row.hard_session_count} hard sessions</span>
+              </div>
+              <div className="muted" style={{ fontSize: 12, marginTop: 6 }}>
+                {row.training_summary}
+              </div>
+              <div className="muted" style={{ fontSize: 12, marginTop: 2 }}>
+                Route mix: {row.route_names.slice(0, 3).join(" · ") || "Route mix"}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
 
 function RecommendationItem({ rec, rank }: { rec: Recommendation; rank: number }) {
@@ -411,14 +616,6 @@ function RecommendCard() {
   );
 }
 
-function FitBoundsOnce({ bounds }: { bounds: L.LatLngBoundsExpression }) {
-  const map = useMap();
-  useEffect(() => {
-    map.fitBounds(bounds, { padding: [24, 24] });
-  }, [map, bounds]);
-  return null;
-}
-
 // wind_deg is the direction the wind is coming FROM. We project the tail in the
 // direction the wind is blowing TOWARD, scaled to the map by approximate metres-per-degree.
 function windTailLatLng(r: ClusteredRoute): [number, number] | null {
@@ -443,33 +640,13 @@ function RoutesMap({
   hoveredId: number | null;
   onHover: (id: number | null) => void;
 }) {
-  const bounds = useMemo<L.LatLngBoundsExpression | null>(() => {
-    if (routes.length === 0) return null;
-    if (routes.length === 1) {
-      const r = routes[0];
-      const pad = 0.02;
-      return [
-        [r.centroid_lat - pad, r.centroid_lon - pad],
-        [r.centroid_lat + pad, r.centroid_lon + pad],
-      ];
-    }
-    const lats = routes.map((r) => r.centroid_lat);
-    const lons = routes.map((r) => r.centroid_lon);
-    return [
-      [Math.min(...lats), Math.min(...lons)],
-      [Math.max(...lats), Math.max(...lons)],
-    ];
-  }, [routes]);
-
-  if (!bounds) return null;
-
   return (
     <MapContainer
       className="routes-map"
-      bounds={bounds}
-      scrollWheelZoom={false}
+      center={APP_CONFIG.mapCenter}
+      zoom={APP_CONFIG.mapZoom}
+      scrollWheelZoom={true}
     >
-      <FitBoundsOnce bounds={bounds} />
       <TileLayer
         url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -641,6 +818,8 @@ export function App() {
           <UnitsToggle units={units} setUnits={setUnits} />
         </div>
         <SummaryCard />
+        <PerformanceGainCard />
+        <WeeklyPerformanceGainCard />
         <RecommendCard />
         <RoutesCard />
         <TimeseriesCard />

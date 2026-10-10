@@ -94,6 +94,20 @@ http://localhost:5173
 
 The frontend is configured to proxy `/api` requests to the backend at `http://127.0.0.1:8000`.
 
+### Frontend configuration
+
+Create a `web/.env` file to override the default map center and chart defaults without editing the code:
+
+```env
+VITE_MAP_CENTER_LAT=42.0837
+VITE_MAP_CENTER_LON=-71.3967
+VITE_MAP_ZOOM=11
+VITE_DEFAULT_METRIC=distance_km
+VITE_DEFAULT_BUCKET=week
+```
+
+These values control the initial map area and the default metrics chart selection. You can change them to your own city or the area you want to share with others.
+
 ## Full app flow
 
 ```bash

@@ -13,6 +13,8 @@ class EnrichedActivity(BaseModel):
     average_speed_mps: float
     average_watts: float | None = None
     weighted_average_watts: float | None = None
+    np_20m_watts: float | None = None
+    np_5m_watts: float | None = None
     start_time: datetime
     elapsed_seconds: int
     moving_seconds: int

@@ -8,6 +8,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from strava_recommender.analysis import build_performance_gains, build_weekly_performance_gains
 from strava_recommender.geo import bearing_to_compass
 from strava_recommender.models.activity import EnrichedActivity
 from strava_recommender.storage import load_activities, load_routes
@@ -32,6 +33,8 @@ class ActivityOut(BaseModel):
     average_speed_kmh: float
     average_watts: float | None
     weighted_average_watts: float | None
+    np_20m_watts: float | None
+    np_5m_watts: float | None
     moving_minutes: float
     temp_c: float
     wind_speed_mps: float
@@ -79,6 +82,44 @@ class RouteOut(BaseModel):
     weather: RouteWeather | None = None
 
 
+class PerformanceGain(BaseModel):
+    route_id: int
+    label: str | None
+    location_name: str | None
+    strava_id: int
+    start_time: str
+    current_power_watts: float
+    baseline_power_watts: float
+    improvement_watts: float
+    power_metric: str
+    distance_km: float
+    elevation_gain_m: float
+    weighted_average_watts: float | None
+    weather_condition: str
+    temp_c: float
+
+
+class WeeklyPerformanceGain(BaseModel):
+    week: str
+    week_start: str
+    route_names: list[str]
+    ride_count: int
+    total_improvement_watts: float
+    avg_improvement_watts: float
+    peak_improvement_watts: float
+    total_distance_km: float
+    total_elevation_m: float
+    avg_power_watts: float
+    hard_session_count: int
+    previous_week_label: str | None
+    previous_week_ride_count: int
+    previous_week_hard_sessions: int
+    previous_week_total_distance_km: float
+    previous_week_avg_power_watts: float
+    key_driver: str
+    training_summary: str
+
+
 def _headwind(activity: EnrichedActivity) -> float | None:
     if activity.bearing_deg is None or not activity.weather_condition:
         return None
@@ -97,6 +138,8 @@ def _to_out(a: EnrichedActivity) -> ActivityOut:
         average_speed_kmh=a.average_speed_mps * 3.6,
         average_watts=a.average_watts,
         weighted_average_watts=a.weighted_average_watts,
+        np_20m_watts=a.np_20m_watts,
+        np_5m_watts=a.np_5m_watts,
         moving_minutes=a.moving_seconds / 60,
         temp_c=a.temp_c,
         wind_speed_mps=a.wind_speed_mps,
@@ -196,8 +239,13 @@ def create_app() -> FastAPI:
                 key = f"{iso.year}-W{iso.week:02d}"
             buckets.setdefault(key, []).append(value)
 
+        def _aggregate(values: list[float]) -> float:
+            if metric in {"distance_km", "elevation_gain_m", "moving_minutes"}:
+                return sum(values)
+            return sum(values) / len(values)
+
         return [
-            TimeseriesPoint(date=k, value=sum(v) / len(v), count=len(v))
+            TimeseriesPoint(date=k, value=_aggregate(v), count=len(v))
             for k, v in sorted(buckets.items())
         ]
 
@@ -218,6 +266,20 @@ def create_app() -> FastAPI:
                 )
             )
         return points
+
+    @app.get("/api/stats/performance-gains", response_model=list[PerformanceGain])
+    def get_performance_gains() -> list[PerformanceGain]:
+        activities = load_activities()
+        routes = load_routes()
+        rows = build_performance_gains(activities, routes)
+        return [PerformanceGain(**row) for row in rows]
+
+    @app.get("/api/stats/weekly-performance-gains", response_model=list[WeeklyPerformanceGain])
+    def get_weekly_performance_gains() -> list[WeeklyPerformanceGain]:
+        activities = load_activities()
+        routes = load_routes()
+        rows = build_weekly_performance_gains(activities, routes)
+        return [WeeklyPerformanceGain(**row) for row in rows]
 
     @app.get("/api/recommend")
     def get_recommend(

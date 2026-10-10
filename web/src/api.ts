@@ -14,6 +14,44 @@ export type TimeseriesPoint = {
   count: number;
 };
 
+export type PerformanceGain = {
+  route_id: number;
+  label: string | null;
+  location_name: string | null;
+  strava_id: number;
+  start_time: string;
+  current_power_watts: number;
+  baseline_power_watts: number;
+  improvement_watts: number;
+  power_metric: string;
+  distance_km: number;
+  elevation_gain_m: number;
+  weighted_average_watts: number | null;
+  weather_condition: string;
+  temp_c: number;
+};
+
+export type WeeklyPerformanceGain = {
+  week: string;
+  week_start: string;
+  route_names: string[];
+  ride_count: number;
+  total_improvement_watts: number;
+  avg_improvement_watts: number;
+  peak_improvement_watts: number;
+  total_distance_km: number;
+  total_elevation_m: number;
+  avg_power_watts: number;
+  hard_session_count: number;
+  previous_week_label: string | null;
+  previous_week_ride_count: number;
+  previous_week_hard_sessions: number;
+  previous_week_total_distance_km: number;
+  previous_week_avg_power_watts: number;
+  key_driver: string;
+  training_summary: string;
+};
+
 export type HeadwindPoint = {
   strava_id: number;
   headwind_mps: number;
@@ -30,6 +68,8 @@ export type Activity = {
   average_speed_kmh: number;
   average_watts: number | null;
   weighted_average_watts: number | null;
+  np_20m_watts: number | null;
+  np_5m_watts: number | null;
   moving_minutes: number;
   temp_c: number;
   wind_speed_mps: number;
@@ -50,6 +90,12 @@ export const fetchTimeseries = (metric: Metric, bucket: Bucket) =>
   get<TimeseriesPoint[]>(
     `/api/stats/timeseries?metric=${metric}&bucket=${bucket}`,
   );
+
+export const fetchPerformanceGains = () =>
+  get<PerformanceGain[]>(`/api/stats/performance-gains`);
+
+export const fetchWeeklyPerformanceGains = () =>
+  get<WeeklyPerformanceGain[]>(`/api/stats/weekly-performance-gains`);
 
 export const fetchHeadwindScatter = () =>
   get<HeadwindPoint[]>(`/api/stats/headwind-scatter`);
