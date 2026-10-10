@@ -424,8 +424,8 @@ function FitBoundsOnce({ bounds }: { bounds: L.LatLngBoundsExpression }) {
 function windTailLatLng(r: ClusteredRoute): [number, number] | null {
   if (!r.weather) return null;
   const speed = r.weather.wind_speed_mps;
-  // ~6 km tail at 5 m/s, capped, so it stays readable across zoom levels
-  const meters = Math.min(15_000, 1200 + speed * 1200);
+  // Make the tail clearly visible and long enough to read from a distance.
+  const meters = Math.min(35_000, 2500 + speed * 2500);
   const towardRad = ((r.weather.wind_deg + 180) * Math.PI) / 180;
   const dLat = (meters * Math.cos(towardRad)) / 111_320;
   const dLon =
@@ -471,9 +471,8 @@ function RoutesMap({
     >
       <FitBoundsOnce bounds={bounds} />
       <TileLayer
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        subdomains="abcd"
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         maxZoom={19}
       />
       {routes.map((r) => {
@@ -510,7 +509,7 @@ function RoutesMap({
             {tail && (
               <Polyline
                 positions={[[r.centroid_lat, r.centroid_lon], tail]}
-                pathOptions={{ color: "#6dd58c", weight: 2, opacity: 0.7 }}
+                pathOptions={{ color: "#0f8f47", weight: 8, opacity: 1, lineCap: "round", lineJoin: "round" }}
               />
             )}
           </CircleMarker>

@@ -722,7 +722,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.34,
     "bearing_deg": 293.4751585878701,
-    "route_id": null
+    "route_id": 10
   },
   {
     "strava_id": 16019213503,
@@ -822,7 +822,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.8600000000000001,
     "bearing_deg": 3.8835092194013328,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 15942347617,
@@ -897,7 +897,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.76,
     "bearing_deg": 232.72823920487264,
-    "route_id": 11
+    "route_id": 12
   },
   {
     "strava_id": 15864242293,
@@ -1222,7 +1222,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.33999999999999986,
     "bearing_deg": 2.188503425732506,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 15477636827,
@@ -1322,7 +1322,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.2600000000000001,
     "bearing_deg": 81.89413922500137,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 15416041436,
@@ -1572,7 +1572,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.17,
     "bearing_deg": 9.771879261198706,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 15062581823,
@@ -1647,7 +1647,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.3,
     "bearing_deg": 274.05178215482925,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 14993923861,
@@ -1672,7 +1672,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.31999999999999995,
     "bearing_deg": 91.92274222819572,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 14957821990,
@@ -1722,7 +1722,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.05,
     "bearing_deg": 3.9192564445807534,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 14931584056,
@@ -2072,7 +2072,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.6,
     "bearing_deg": 3.4137188100163485,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 14599858760,
@@ -2122,7 +2122,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.5199999999999999,
     "bearing_deg": 251.58069196918277,
-    "route_id": 15
+    "route_id": 16
   },
   {
     "strava_id": 14502262574,
@@ -2222,7 +2222,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.2600000000000001,
     "bearing_deg": 214.20459378114276,
-    "route_id": 16
+    "route_id": 17
   },
   {
     "strava_id": 14409838600,
@@ -2247,7 +2247,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.2600000000000001,
     "bearing_deg": 214.2375813318484,
-    "route_id": 16
+    "route_id": 17
   },
   {
     "strava_id": 14376766469,
@@ -2497,7 +2497,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.53,
     "bearing_deg": 204.05850119195202,
-    "route_id": 17
+    "route_id": 18
   },
   {
     "strava_id": 13846864479,
@@ -2522,7 +2522,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.39,
     "bearing_deg": 1.9539368306310507,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 13763124568,
@@ -2547,7 +2547,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.8400000000000001,
     "bearing_deg": 150.00659288777877,
-    "route_id": 18
+    "route_id": 19
   },
   {
     "strava_id": 13233610617,
@@ -2797,7 +2797,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.18999999999999986,
     "bearing_deg": 208.21316660648455,
-    "route_id": 19
+    "route_id": 20
   },
   {
     "strava_id": 12478906797,
@@ -2947,7 +2947,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.34,
     "bearing_deg": 272.420906576416,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 12344453532,
@@ -3197,7 +3197,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.43999999999999984,
     "bearing_deg": 270.35050087901243,
-    "route_id": 20
+    "route_id": 21
   },
   {
     "strava_id": 12149356943,
@@ -3297,7 +3297,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.45,
     "bearing_deg": 173.0464306347783,
-    "route_id": 21
+    "route_id": 22
   },
   {
     "strava_id": 12052957882,
@@ -3322,7 +3322,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 1.0,
     "bearing_deg": 103.25788843052078,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 12034510050,
@@ -3622,7 +3622,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.0,
     "bearing_deg": 321.9343011781149,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 11759522156,
@@ -3797,7 +3797,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.11999999999999993,
     "bearing_deg": 298.2445558722405,
-    "route_id": 24
+    "route_id": 25
   },
   {
     "strava_id": 11639017870,
@@ -3897,7 +3897,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.51,
     "bearing_deg": 321.1060510869832,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 11539500897,
@@ -3922,7 +3922,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.8300000000000001,
     "bearing_deg": 102.50388512211401,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 11511276655,
@@ -4172,7 +4172,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.99,
     "bearing_deg": 148.8022058663554,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 11332049647,
@@ -4197,7 +4197,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.41999999999999993,
     "bearing_deg": 106.08340770327504,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 11264625460,
@@ -4272,7 +4272,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.6,
     "bearing_deg": 103.36533931472798,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 11185279029,
@@ -4322,7 +4322,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.41,
     "bearing_deg": 102.76136608611682,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 11130769652,
@@ -4347,7 +4347,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.01,
     "bearing_deg": 292.9995319198758,
-    "route_id": null
+    "route_id": 27
   },
   {
     "strava_id": 11077642338,
@@ -4722,7 +4722,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.8099999999999999,
     "bearing_deg": 270.4179611853306,
-    "route_id": 20
+    "route_id": 21
   },
   {
     "strava_id": 10027868522,
@@ -4772,7 +4772,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.11000000000000014,
     "bearing_deg": 207.27846987544734,
-    "route_id": 19
+    "route_id": 20
   },
   {
     "strava_id": 9984266096,
@@ -5122,7 +5122,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.08999999999999986,
     "bearing_deg": 321.9978117822308,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 9723942654,
@@ -5197,7 +5197,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.1,
     "bearing_deg": 172.94264273337262,
-    "route_id": null
+    "route_id": 28
   },
   {
     "strava_id": 9691256580,
@@ -5222,7 +5222,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.019999999999999928,
     "bearing_deg": 182.76096271248318,
-    "route_id": null
+    "route_id": 29
   },
   {
     "strava_id": 9678749234,
@@ -5347,7 +5347,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.1,
     "bearing_deg": 8.62783597129038,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 9595501458,
@@ -5372,7 +5372,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.2800000000000001,
     "bearing_deg": 173.062294298167,
-    "route_id": 21
+    "route_id": 22
   },
   {
     "strava_id": 9581067973,
@@ -5422,7 +5422,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.36,
     "bearing_deg": 1.7081123767784447,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 9568323857,
@@ -5497,7 +5497,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.46000000000000013,
     "bearing_deg": 105.61283909996956,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 9536420988,
@@ -5547,7 +5547,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.05,
     "bearing_deg": 83.69166324963703,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 9506019439,
@@ -5597,7 +5597,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.2,
     "bearing_deg": 312.69950146269656,
-    "route_id": null
+    "route_id": 30
   },
   {
     "strava_id": 9493012669,
@@ -5972,7 +5972,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.2800000000000001,
     "bearing_deg": 298.2223411395977,
-    "route_id": 24
+    "route_id": 25
   },
   {
     "strava_id": 9276041856,
@@ -6022,7 +6022,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.1,
     "bearing_deg": 251.93451574089295,
-    "route_id": 15
+    "route_id": 16
   },
   {
     "strava_id": 9213224151,
@@ -6072,7 +6072,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.33000000000000007,
     "bearing_deg": 352.7206873999752,
-    "route_id": 26
+    "route_id": 31
   },
   {
     "strava_id": 9188726954,
@@ -6122,7 +6122,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.5900000000000001,
     "bearing_deg": 86.48750906667487,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 9157271268,
@@ -6222,7 +6222,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.1199999999999999,
     "bearing_deg": 9.875832046168227,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 9115131856,
@@ -6322,7 +6322,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.5599999999999999,
     "bearing_deg": 83.92617913202287,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 9042729598,
@@ -6372,7 +6372,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.08999999999999986,
     "bearing_deg": 276.89537980798355,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 9023607455,
@@ -6522,7 +6522,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.3,
     "bearing_deg": 201.78608624378816,
-    "route_id": 17
+    "route_id": 18
   },
   {
     "strava_id": 8937898597,
@@ -6547,7 +6547,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.6900000000000001,
     "bearing_deg": 91.64090268271173,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 8933058011,
@@ -6972,7 +6972,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.79,
     "bearing_deg": 322.53930184293654,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 8177732681,
@@ -7072,7 +7072,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.4800000000000001,
     "bearing_deg": 247.4412248840273,
-    "route_id": 15
+    "route_id": 16
   },
   {
     "strava_id": 8068881794,
@@ -7272,7 +7272,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.8300000000000001,
     "bearing_deg": 270.5015727812806,
-    "route_id": 20
+    "route_id": 21
   },
   {
     "strava_id": 7931937519,
@@ -7472,7 +7472,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.9099999999999999,
     "bearing_deg": 28.21007581742407,
-    "route_id": 27
+    "route_id": 32
   },
   {
     "strava_id": 7830702590,
@@ -7547,7 +7547,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.82,
     "bearing_deg": 278.39216926229403,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 7811907090,
@@ -7572,7 +7572,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.2699999999999999,
     "bearing_deg": 102.46699747097824,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 7804244550,
@@ -7622,7 +7622,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.019999999999999928,
     "bearing_deg": 278.3712891943522,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 7780530782,
@@ -7647,7 +7647,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.11999999999999993,
     "bearing_deg": 4.823307202195565,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 7774880787,
@@ -7772,7 +7772,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.9199999999999999,
     "bearing_deg": 103.03769617056929,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 7744208221,
@@ -7922,7 +7922,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.35,
     "bearing_deg": 322.76733852917374,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 7702968614,
@@ -8022,7 +8022,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.25,
     "bearing_deg": 94.6786441234176,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 7658723860,
@@ -8272,7 +8272,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.6600000000000001,
     "bearing_deg": 144.7582850871123,
-    "route_id": 28
+    "route_id": 33
   },
   {
     "strava_id": 7586615961,
@@ -8372,7 +8372,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.6600000000000001,
     "bearing_deg": 270.46196360753,
-    "route_id": 20
+    "route_id": 21
   },
   {
     "strava_id": 7542497981,
@@ -8447,7 +8447,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.41000000000000014,
     "bearing_deg": 271.470582786201,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 7515231900,
@@ -8572,7 +8572,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.5399999999999998,
     "bearing_deg": 283.784006115973,
-    "route_id": null
+    "route_id": 34
   },
   {
     "strava_id": 7475006467,
@@ -8697,7 +8697,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.019999999999999928,
     "bearing_deg": 5.009530974449774,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 7429763744,
@@ -8822,7 +8822,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.0100000000000002,
     "bearing_deg": 322.73350382168303,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 7372573065,
@@ -8847,7 +8847,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.2800000000000001,
     "bearing_deg": 144.53085010466333,
-    "route_id": 28
+    "route_id": 33
   },
   {
     "strava_id": 7362182215,
@@ -8997,7 +8997,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.6,
     "bearing_deg": 270.66170623533907,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 7310175254,
@@ -9047,7 +9047,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.39,
     "bearing_deg": 105.67305623194017,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 7287450647,
@@ -9122,7 +9122,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.31000000000000016,
     "bearing_deg": 350.2486997689339,
-    "route_id": 26
+    "route_id": 31
   },
   {
     "strava_id": 7272543140,
@@ -9147,7 +9147,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.31000000000000016,
     "bearing_deg": 148.9819469227479,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 7272239186,
@@ -9372,7 +9372,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.02,
     "bearing_deg": 178.83123694867743,
-    "route_id": null
+    "route_id": 6
   },
   {
     "strava_id": 7178833386,
@@ -9422,7 +9422,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.8300000000000001,
     "bearing_deg": 83.86357214971798,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 7166116427,
@@ -9472,7 +9472,7 @@
     "weather_condition": "Rain",
     "temp_stress": 0.08000000000000007,
     "bearing_deg": 252.07641144713273,
-    "route_id": 15
+    "route_id": 16
   },
   {
     "strava_id": 7137538365,
@@ -9522,7 +9522,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.6699999999999999,
     "bearing_deg": 188.40949949652298,
-    "route_id": null
+    "route_id": 35
   },
   {
     "strava_id": 7122011168,
@@ -9547,7 +9547,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.7699999999999999,
     "bearing_deg": 351.45909662094857,
-    "route_id": 26
+    "route_id": 31
   },
   {
     "strava_id": 7121933543,
@@ -9572,7 +9572,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.7699999999999999,
     "bearing_deg": 148.82028071405705,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 7121642022,
@@ -9822,7 +9822,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.9099999999999999,
     "bearing_deg": 101.74860522848604,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 7029462532,
@@ -10022,7 +10022,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.11999999999999993,
     "bearing_deg": 85.21533195863049,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 6960656020,
@@ -10047,7 +10047,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.08,
     "bearing_deg": 322.97947067800635,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 6951374813,
@@ -10072,7 +10072,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.16000000000000014,
     "bearing_deg": 270.66761563358307,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 6937538458,
@@ -10097,7 +10097,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.61,
     "bearing_deg": 148.95040903582833,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 6937162032,
@@ -10122,7 +10122,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.61,
     "bearing_deg": 176.6380374691256,
-    "route_id": 29
+    "route_id": 36
   },
   {
     "strava_id": 6926799033,
@@ -10272,7 +10272,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.61,
     "bearing_deg": 103.2694018811718,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 6673201316,
@@ -10372,7 +10372,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.79,
     "bearing_deg": 175.88818784985096,
-    "route_id": 29
+    "route_id": 36
   },
   {
     "strava_id": 6284508075,
@@ -10422,7 +10422,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.9099999999999999,
     "bearing_deg": 98.18249601433843,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 6220908529,
@@ -10472,7 +10472,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.9099999999999999,
     "bearing_deg": 85.39103012400597,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 6159730661,
@@ -10572,7 +10572,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.9800000000000001,
     "bearing_deg": 93.94805064232332,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 6122409479,
@@ -10597,7 +10597,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.1,
     "bearing_deg": 342.5344176989567,
-    "route_id": 30
+    "route_id": 37
   },
   {
     "strava_id": 6116214510,
@@ -10872,7 +10872,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.36,
     "bearing_deg": 28.19782760700855,
-    "route_id": 27
+    "route_id": 32
   },
   {
     "strava_id": 6005963517,
@@ -10947,7 +10947,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.36,
     "bearing_deg": 270.4634764926271,
-    "route_id": 20
+    "route_id": 21
   },
   {
     "strava_id": 5972081216,
@@ -10997,7 +10997,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.33000000000000007,
     "bearing_deg": 103.78428215433667,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 5949268805,
@@ -11072,7 +11072,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.20999999999999996,
     "bearing_deg": 248.15109524262695,
-    "route_id": 15
+    "route_id": 16
   },
   {
     "strava_id": 5920644803,
@@ -11097,7 +11097,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.3,
     "bearing_deg": 103.28027844002213,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 5910626813,
@@ -11147,7 +11147,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.5199999999999999,
     "bearing_deg": 85.30353353381497,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 5896044864,
@@ -11222,7 +11222,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.08000000000000007,
     "bearing_deg": 91.71874585650482,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 5856491351,
@@ -11272,7 +11272,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.8300000000000001,
     "bearing_deg": 194.88450277209674,
-    "route_id": 31
+    "route_id": 38
   },
   {
     "strava_id": 5833576152,
@@ -11297,7 +11297,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.2600000000000001,
     "bearing_deg": 108.60998700820687,
-    "route_id": 32
+    "route_id": 39
   },
   {
     "strava_id": 5829754144,
@@ -11522,7 +11522,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.2600000000000001,
     "bearing_deg": 18.175411926774927,
-    "route_id": 33
+    "route_id": 40
   },
   {
     "strava_id": 5759972171,
@@ -11547,7 +11547,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.33000000000000007,
     "bearing_deg": 144.3416611642441,
-    "route_id": 28
+    "route_id": 33
   },
   {
     "strava_id": 5754709127,
@@ -11597,7 +11597,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.23999999999999985,
     "bearing_deg": 271.86383790251693,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 5731270092,
@@ -11647,7 +11647,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.13999999999999985,
     "bearing_deg": 354.1389005197203,
-    "route_id": 34
+    "route_id": 41
   },
   {
     "strava_id": 5710613466,
@@ -11722,7 +11722,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.18999999999999986,
     "bearing_deg": 278.3428820599735,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 5673578712,
@@ -11747,7 +11747,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.23000000000000007,
     "bearing_deg": 321.10433755493983,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 5668121211,
@@ -11797,7 +11797,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.019999999999999928,
     "bearing_deg": 271.0299359912733,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 5647536455,
@@ -11872,7 +11872,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.23000000000000007,
     "bearing_deg": 3.8122488903106273,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 5625590202,
@@ -11897,7 +11897,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.05,
     "bearing_deg": 321.0783610473977,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 5611918793,
@@ -11947,7 +11947,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.1,
     "bearing_deg": 342.6112600614608,
-    "route_id": 30
+    "route_id": 37
   },
   {
     "strava_id": 5589089872,
@@ -11972,7 +11972,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.3,
     "bearing_deg": 106.66983229008292,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 5583930143,
@@ -12097,7 +12097,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.6100000000000001,
     "bearing_deg": 19.837816363662284,
-    "route_id": 33
+    "route_id": 40
   },
   {
     "strava_id": 5533475383,
@@ -12122,7 +12122,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.4899999999999999,
     "bearing_deg": 270.5310094741436,
-    "route_id": 20
+    "route_id": 21
   },
   {
     "strava_id": 5526344168,
@@ -12197,7 +12197,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.33999999999999986,
     "bearing_deg": 104.96838942995919,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 5501571517,
@@ -12222,7 +12222,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.010000000000000142,
     "bearing_deg": 234.474650605514,
-    "route_id": 11
+    "route_id": 12
   },
   {
     "strava_id": 5487818092,
@@ -12272,7 +12272,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.6,
     "bearing_deg": 46.31136438218056,
-    "route_id": 35
+    "route_id": 42
   },
   {
     "strava_id": 5478917830,
@@ -12422,7 +12422,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.4,
     "bearing_deg": 147.49334629560747,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 5433803968,
@@ -12472,7 +12472,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.36999999999999994,
     "bearing_deg": 316.99575959782095,
-    "route_id": 36
+    "route_id": 43
   },
   {
     "strava_id": 5411632109,
@@ -12497,7 +12497,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.010000000000000142,
     "bearing_deg": 7.537511689416135,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 5400049272,
@@ -12697,7 +12697,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.6399999999999999,
     "bearing_deg": 148.5940913218385,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 5320166856,
@@ -12747,7 +12747,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.41999999999999993,
     "bearing_deg": 144.3973467008114,
-    "route_id": 28
+    "route_id": 33
   },
   {
     "strava_id": 5292768979,
@@ -12772,7 +12772,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.010000000000000142,
     "bearing_deg": 143.40182929240382,
-    "route_id": 37
+    "route_id": 44
   },
   {
     "strava_id": 5293365588,
@@ -12847,7 +12847,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.31999999999999995,
     "bearing_deg": 45.30084631992554,
-    "route_id": 35
+    "route_id": 42
   },
   {
     "strava_id": 5281062500,
@@ -12897,7 +12897,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.41,
     "bearing_deg": 96.69082903165742,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 5262820845,
@@ -12972,7 +12972,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.54,
     "bearing_deg": 148.90430564983455,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 5231703326,
@@ -13047,7 +13047,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.1,
     "bearing_deg": 149.30874009999775,
-    "route_id": 38
+    "route_id": 45
   },
   {
     "strava_id": 5201293535,
@@ -13172,7 +13172,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.45,
     "bearing_deg": 120.37245368331139,
-    "route_id": null
+    "route_id": 46
   },
   {
     "strava_id": 5160315224,
@@ -13197,7 +13197,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.36,
     "bearing_deg": 354.1464426325091,
-    "route_id": 26
+    "route_id": 31
   },
   {
     "strava_id": 5160198605,
@@ -13222,7 +13222,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.36,
     "bearing_deg": 148.65855205040504,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 5159756110,
@@ -13247,7 +13247,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.17,
     "bearing_deg": 175.73818314861228,
-    "route_id": 29
+    "route_id": 36
   },
   {
     "strava_id": 5149821960,
@@ -13272,7 +13272,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.23,
     "bearing_deg": 354.1137582629835,
-    "route_id": 34
+    "route_id": 41
   },
   {
     "strava_id": 5125265319,
@@ -13372,7 +13372,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.24000000000000005,
     "bearing_deg": 105.78982632251348,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 5093043320,
@@ -13422,7 +13422,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.3199999999999998,
     "bearing_deg": 148.35977596098218,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 5070714515,
@@ -13447,7 +13447,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.5,
     "bearing_deg": 1.7202338458959048,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 5063037128,
@@ -13522,7 +13522,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.7699999999999999,
     "bearing_deg": 352.98305900812,
-    "route_id": 26
+    "route_id": 31
   },
   {
     "strava_id": 5040352970,
@@ -13622,7 +13622,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.010000000000000142,
     "bearing_deg": 152.60398085857753,
-    "route_id": 38
+    "route_id": 45
   },
   {
     "strava_id": 4995953051,
@@ -13672,7 +13672,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.36999999999999994,
     "bearing_deg": 90.64308721582415,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 4986399076,
@@ -13847,7 +13847,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.51,
     "bearing_deg": 84.96552437130163,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 4468389899,
@@ -13897,7 +13897,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.30999999999999994,
     "bearing_deg": 106.19264989007092,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 4408319696,
@@ -13972,7 +13972,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.78,
     "bearing_deg": 105.32980846676583,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 4376143571,
@@ -14072,7 +14072,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.81,
     "bearing_deg": 321.8726779596546,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 4329133301,
@@ -14172,7 +14172,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.15,
     "bearing_deg": 105.90610201835159,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 4298834291,
@@ -14197,7 +14197,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.1,
     "bearing_deg": 149.7786545052404,
-    "route_id": 18
+    "route_id": 19
   },
   {
     "strava_id": 4291435355,
@@ -14247,7 +14247,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.6900000000000001,
     "bearing_deg": 103.95360599198136,
-    "route_id": 22
+    "route_id": 23
   },
   {
     "strava_id": 4242537975,
@@ -14597,7 +14597,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.08999999999999986,
     "bearing_deg": 351.72163302229626,
-    "route_id": 26
+    "route_id": 31
   },
   {
     "strava_id": 4099041019,
@@ -14622,7 +14622,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.08999999999999986,
     "bearing_deg": 147.4654336202284,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 4088382801,
@@ -14822,7 +14822,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.060000000000000143,
     "bearing_deg": 192.53262522523136,
-    "route_id": 31
+    "route_id": 38
   },
   {
     "strava_id": 4029629676,
@@ -14847,7 +14847,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.29000000000000004,
     "bearing_deg": 326.9005880919182,
-    "route_id": 39
+    "route_id": 47
   },
   {
     "strava_id": 4016611870,
@@ -14872,7 +14872,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.039999999999999855,
     "bearing_deg": 270.3959033118995,
-    "route_id": 20
+    "route_id": 21
   },
   {
     "strava_id": 4009753171,
@@ -14922,7 +14922,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.3,
     "bearing_deg": 141.97887178452686,
-    "route_id": 37
+    "route_id": 44
   },
   {
     "strava_id": 4000526764,
@@ -14947,7 +14947,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.18999999999999986,
     "bearing_deg": 96.01489885022772,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 3993301618,
@@ -14972,7 +14972,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.4699999999999999,
     "bearing_deg": 84.43850618666704,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 3986769984,
@@ -15197,7 +15197,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.010000000000000142,
     "bearing_deg": 274.63850149581225,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 3911512789,
@@ -15297,7 +15297,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.21999999999999992,
     "bearing_deg": 250.8755801033173,
-    "route_id": 15
+    "route_id": 16
   },
   {
     "strava_id": 3877510503,
@@ -15372,7 +15372,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.22,
     "bearing_deg": 20.233282403910096,
-    "route_id": 33
+    "route_id": 40
   },
   {
     "strava_id": 3853416127,
@@ -15497,7 +15497,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.5399999999999998,
     "bearing_deg": 83.60323644911676,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 3814818698,
@@ -15697,7 +15697,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.21999999999999992,
     "bearing_deg": 192.83149613713385,
-    "route_id": 31
+    "route_id": 38
   },
   {
     "strava_id": 3753684188,
@@ -15872,7 +15872,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.16000000000000014,
     "bearing_deg": 83.67495141973473,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 3707024362,
@@ -15897,7 +15897,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.31000000000000016,
     "bearing_deg": 321.85954868198115,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 3702009015,
@@ -15947,7 +15947,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.13999999999999985,
     "bearing_deg": 148.75617233710284,
-    "route_id": 25
+    "route_id": 26
   },
   {
     "strava_id": 3695078658,
@@ -16097,7 +16097,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.95,
     "bearing_deg": 317.2907154050124,
-    "route_id": 36
+    "route_id": 43
   },
   {
     "strava_id": 3637814148,
@@ -16172,7 +16172,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.2,
     "bearing_deg": 84.33991446733137,
-    "route_id": 40
+    "route_id": 48
   },
   {
     "strava_id": 3613619365,
@@ -16197,7 +16197,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.04,
     "bearing_deg": 327.0026790143252,
-    "route_id": 39
+    "route_id": 47
   },
   {
     "strava_id": 3608545477,
@@ -16222,7 +16222,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.65,
     "bearing_deg": 84.1981124044616,
-    "route_id": 40
+    "route_id": 48
   },
   {
     "strava_id": 3606755803,
@@ -16247,7 +16247,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.65,
     "bearing_deg": 108.73754005193598,
-    "route_id": 32
+    "route_id": 39
   },
   {
     "strava_id": 3597239901,
@@ -16322,7 +16322,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.5599999999999999,
     "bearing_deg": 1.6300698987346323,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 3579793531,
@@ -16347,7 +16347,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.13999999999999985,
     "bearing_deg": 95.14716425499518,
-    "route_id": 14
+    "route_id": 15
   },
   {
     "strava_id": 3571941344,
@@ -16372,7 +16372,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.060000000000000143,
     "bearing_deg": 232.16764187098732,
-    "route_id": 11
+    "route_id": 12
   },
   {
     "strava_id": 3555263107,
@@ -16422,7 +16422,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.16000000000000014,
     "bearing_deg": 80.22803483534722,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 3541298602,
@@ -16447,7 +16447,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.4800000000000001,
     "bearing_deg": 80.37316261363651,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 3530122755,
@@ -16472,7 +16472,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.15,
     "bearing_deg": 322.43235934089,
-    "route_id": 23
+    "route_id": 24
   },
   {
     "strava_id": 3524975245,
@@ -16497,7 +16497,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.039999999999999855,
     "bearing_deg": 230.80665529190296,
-    "route_id": 11
+    "route_id": 12
   },
   {
     "strava_id": 3513965970,
@@ -16622,7 +16622,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.45999999999999996,
     "bearing_deg": 275.81037427970983,
-    "route_id": 13
+    "route_id": 14
   },
   {
     "strava_id": 3443898445,
@@ -16697,7 +16697,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.5900000000000001,
     "bearing_deg": 82.80263747369696,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 3387939272,
@@ -16822,7 +16822,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.27,
     "bearing_deg": 82.73814908150172,
-    "route_id": 12
+    "route_id": 13
   },
   {
     "strava_id": 3297081496,
@@ -16897,7 +16897,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.4,
     "bearing_deg": 143.75320436363722,
-    "route_id": 28
+    "route_id": 33
   },
   {
     "strava_id": 3203657747,
@@ -16922,7 +16922,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.3800000000000001,
     "bearing_deg": 2.190084704906951,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 3182861643,
@@ -16972,7 +16972,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.15,
     "bearing_deg": 2.121164853217465,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 3167135730,
@@ -17047,7 +17047,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.6900000000000001,
     "bearing_deg": 4.351831612826288,
-    "route_id": 10
+    "route_id": 11
   },
   {
     "strava_id": 18484298741,
@@ -17097,7 +17097,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.010000000000000142,
     "bearing_deg": 160.10659376099898,
-    "route_id": null
+    "route_id": 3
   },
   {
     "strava_id": 18457266549,
@@ -17122,7 +17122,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.2800000000000001,
     "bearing_deg": 155.94799207061487,
-    "route_id": null
+    "route_id": 3
   },
   {
     "strava_id": 18453313495,
@@ -17147,7 +17147,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.2800000000000001,
     "bearing_deg": 353.8347648524323,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 18565939784,
@@ -17172,7 +17172,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.23999999999999985,
     "bearing_deg": 217.99228848591304,
-    "route_id": null
+    "route_id": 1
   },
   {
     "strava_id": 18548841267,
@@ -17197,7 +17197,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.0899999999999999,
     "bearing_deg": 260.1353489782441,
-    "route_id": null
+    "route_id": 8
   },
   {
     "strava_id": 18965219767,
@@ -17222,7 +17222,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.43999999999999984,
     "bearing_deg": 216.63616629723256,
-    "route_id": null
+    "route_id": 1
   },
   {
     "strava_id": 18950938322,
@@ -17247,7 +17247,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.4899999999999999,
     "bearing_deg": 351.18273591047006,
-    "route_id": null
+    "route_id": 31
   },
   {
     "strava_id": 18950693120,
@@ -17272,7 +17272,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.5600000000000002,
     "bearing_deg": 155.7558539481065,
-    "route_id": null
+    "route_id": 3
   },
   {
     "strava_id": 18918018663,
@@ -17297,7 +17297,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.23999999999999985,
     "bearing_deg": 155.80636648810378,
-    "route_id": null
+    "route_id": 3
   },
   {
     "strava_id": 18909961271,
@@ -17322,7 +17322,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.22,
     "bearing_deg": 241.55160274067953,
-    "route_id": null
+    "route_id": 0
   },
   {
     "strava_id": 18888785283,
@@ -17347,7 +17347,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.4800000000000001,
     "bearing_deg": 54.42079615365634,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 18880235717,
@@ -17422,7 +17422,7 @@
     "weather_condition": "Clear",
     "temp_stress": 1.11,
     "bearing_deg": 212.42678530243123,
-    "route_id": null
+    "route_id": 17
   },
   {
     "strava_id": 18829182741,
@@ -17447,7 +17447,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.0,
     "bearing_deg": 236.19617489041923,
-    "route_id": null
+    "route_id": 0
   },
   {
     "strava_id": 18829261935,
@@ -17472,7 +17472,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 1.0,
     "bearing_deg": 236.87752694217238,
-    "route_id": null
+    "route_id": 0
   },
   {
     "strava_id": 18811120912,
@@ -17497,7 +17497,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.8,
     "bearing_deg": 313.0417029143631,
-    "route_id": null
+    "route_id": 30
   },
   {
     "strava_id": 18811010070,
@@ -17547,7 +17547,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.45,
     "bearing_deg": 338.2033751343212,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 18754402304,
@@ -17572,7 +17572,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.9400000000000001,
     "bearing_deg": 3.469379219856023,
-    "route_id": null
+    "route_id": 11
   },
   {
     "strava_id": 18732069315,
@@ -17597,7 +17597,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.18999999999999986,
     "bearing_deg": 44.09616361316199,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 18712819479,
@@ -17622,7 +17622,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.65,
     "bearing_deg": 338.45103916339815,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 18672551199,
@@ -17647,7 +17647,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.060000000000000143,
     "bearing_deg": 212.8378106168195,
-    "route_id": null
+    "route_id": 1
   },
   {
     "strava_id": 18653843292,
@@ -17672,7 +17672,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.23999999999999985,
     "bearing_deg": 166.51138045664402,
-    "route_id": null
+    "route_id": 6
   },
   {
     "strava_id": 18626405013,
@@ -17722,7 +17722,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.9800000000000001,
     "bearing_deg": 45.61303400055306,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 18588710772,
@@ -17747,7 +17747,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.95,
     "bearing_deg": 170.70491233236794,
-    "route_id": null
+    "route_id": 6
   },
   {
     "strava_id": 19177361273,
@@ -17797,7 +17797,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.9199999999999999,
     "bearing_deg": 155.0165451023962,
-    "route_id": null
+    "route_id": 3
   },
   {
     "strava_id": 19135997941,
@@ -17872,7 +17872,7 @@
     "weather_condition": "Drizzle",
     "temp_stress": 0.9100000000000001,
     "bearing_deg": 54.599584578166514,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 19078570468,
@@ -17922,7 +17922,7 @@
     "weather_condition": "Rain",
     "temp_stress": 0.31999999999999995,
     "bearing_deg": 121.36760983105916,
-    "route_id": null
+    "route_id": 46
   },
   {
     "strava_id": 19056005025,
@@ -17947,7 +17947,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.4800000000000001,
     "bearing_deg": 215.97103944595884,
-    "route_id": null
+    "route_id": 1
   },
   {
     "strava_id": 19011850586,
@@ -17972,7 +17972,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.38999999999999985,
     "bearing_deg": 28.668973338327646,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 18997926908,
@@ -17997,7 +17997,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.0,
     "bearing_deg": 317.70476344745106,
-    "route_id": null
+    "route_id": 24
   },
   {
     "strava_id": 18976468799,
@@ -18047,7 +18047,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.13999999999999985,
     "bearing_deg": 218.0522098437632,
-    "route_id": null
+    "route_id": 1
   },
   {
     "strava_id": 19282685794,
@@ -18072,7 +18072,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.0,
     "bearing_deg": 91.5888390916864,
-    "route_id": null
+    "route_id": 15
   },
   {
     "strava_id": 19255046179,
@@ -18097,7 +18097,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.4699999999999999,
     "bearing_deg": 28.58829874346185,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 19248352178,
@@ -18147,7 +18147,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.4,
     "bearing_deg": 187.72124780446518,
-    "route_id": null
+    "route_id": 35
   },
   {
     "strava_id": 19710418500,
@@ -18172,7 +18172,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.15,
     "bearing_deg": 332.6234496897837,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 19671190256,
@@ -18247,7 +18247,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.7699999999999999,
     "bearing_deg": 183.8217276825094,
-    "route_id": null
+    "route_id": 29
   },
   {
     "strava_id": 19619071713,
@@ -18272,7 +18272,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.7699999999999999,
     "bearing_deg": 184.1512214053621,
-    "route_id": null
+    "route_id": 29
   },
   {
     "strava_id": 19600894956,
@@ -18297,7 +18297,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.21000000000000013,
     "bearing_deg": 172.7066110054518,
-    "route_id": null
+    "route_id": 28
   },
   {
     "strava_id": 19555284695,
@@ -18322,7 +18322,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.0,
     "bearing_deg": 33.755465012533534,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 19541109929,
@@ -18347,7 +18347,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.16999999999999993,
     "bearing_deg": 53.52145772624442,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 19497843071,
@@ -18372,7 +18372,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.11999999999999993,
     "bearing_deg": 216.49953648352994,
-    "route_id": null
+    "route_id": 1
   },
   {
     "strava_id": 19474869430,
@@ -18397,7 +18397,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.38000000000000006,
     "bearing_deg": 351.37606418878727,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 19460858890,
@@ -18447,7 +18447,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.45999999999999996,
     "bearing_deg": 338.1395443824963,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 19386500446,
@@ -18472,7 +18472,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.41,
     "bearing_deg": 347.50452594499313,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 19382951074,
@@ -18497,7 +18497,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.6300000000000001,
     "bearing_deg": 352.16749733344244,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 19361420250,
@@ -18522,7 +18522,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.030000000000000072,
     "bearing_deg": 154.78966065574514,
-    "route_id": null
+    "route_id": 3
   },
   {
     "strava_id": 19334133307,
@@ -18547,7 +18547,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.06999999999999992,
     "bearing_deg": 74.49994261316283,
-    "route_id": null
+    "route_id": 7
   },
   {
     "strava_id": 19306490629,
@@ -18572,7 +18572,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.2800000000000001,
     "bearing_deg": 74.89816587471239,
-    "route_id": null
+    "route_id": 7
   },
   {
     "strava_id": 20449675742,
@@ -18597,7 +18597,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.35,
     "bearing_deg": 45.638757887053316,
-    "route_id": null
+    "route_id": 5
   },
   {
     "strava_id": 20437178419,
@@ -18622,7 +18622,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.68,
     "bearing_deg": 293.2110481434713,
-    "route_id": null
+    "route_id": 10
   },
   {
     "strava_id": 20418534350,
@@ -18647,7 +18647,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.13000000000000006,
     "bearing_deg": 347.4235929917561,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 20323073564,
@@ -18672,7 +18672,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.82,
     "bearing_deg": 351.3520577818225,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 20302863831,
@@ -18697,7 +18697,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.29000000000000004,
     "bearing_deg": 213.97549111789644,
-    "route_id": null
+    "route_id": 17
   },
   {
     "strava_id": 20246109728,
@@ -18722,7 +18722,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.039999999999999855,
     "bearing_deg": 203.317192475909,
-    "route_id": null
+    "route_id": 18
   },
   {
     "strava_id": 20225946201,
@@ -18747,7 +18747,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.06999999999999992,
     "bearing_deg": 103.59398020602833,
-    "route_id": null
+    "route_id": 23
   },
   {
     "strava_id": 20145946876,
@@ -18772,7 +18772,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.4,
     "bearing_deg": 260.17369227161464,
-    "route_id": null
+    "route_id": 8
   },
   {
     "strava_id": 20129125126,
@@ -18797,7 +18797,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.24000000000000005,
     "bearing_deg": 333.24069811189656,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 20073743540,
@@ -18822,7 +18822,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.23000000000000007,
     "bearing_deg": 217.14947695367186,
-    "route_id": null
+    "route_id": 1
   },
   {
     "strava_id": 20049371276,
@@ -18847,7 +18847,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.15,
     "bearing_deg": 283.69084184594385,
-    "route_id": null
+    "route_id": 34
   },
   {
     "strava_id": 20032526718,
@@ -18872,7 +18872,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.08000000000000007,
     "bearing_deg": 64.62819014577133,
-    "route_id": null
+    "route_id": 7
   },
   {
     "strava_id": 19934494894,
@@ -18897,7 +18897,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.21999999999999992,
     "bearing_deg": 176.65651685706212,
-    "route_id": null
+    "route_id": 6
   },
   {
     "strava_id": 19921044366,
@@ -18922,7 +18922,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.08999999999999986,
     "bearing_deg": 217.59953096093173,
-    "route_id": null
+    "route_id": 1
   },
   {
     "strava_id": 19915182033,
@@ -18947,7 +18947,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.7600000000000001,
     "bearing_deg": 338.18236423548893,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 19915381109,
@@ -18972,7 +18972,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.7600000000000001,
     "bearing_deg": 338.6931925848718,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 19849318117,
@@ -18997,7 +18997,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.060000000000000143,
     "bearing_deg": 291.2406094989419,
-    "route_id": null
+    "route_id": 27
   },
   {
     "strava_id": 19822227546,
@@ -19022,7 +19022,7 @@
     "weather_condition": "Clear",
     "temp_stress": 0.010000000000000142,
     "bearing_deg": 332.573098107054,
-    "route_id": null
+    "route_id": 2
   },
   {
     "strava_id": 19755895296,
@@ -19047,7 +19047,7 @@
     "weather_condition": "Clouds",
     "temp_stress": 0.060000000000000143,
     "bearing_deg": 283.5596710711914,
-    "route_id": null
+    "route_id": 34
   },
   {
     "strava_id": 19732056125,
@@ -19072,6 +19072,6 @@
     "weather_condition": "Clear",
     "temp_stress": 0.7699999999999999,
     "bearing_deg": 216.32716371587162,
-    "route_id": null
+    "route_id": 1
   }
 ]
